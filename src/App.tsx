@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Lenis from 'lenis';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Navigation } from './components/Navigation';
 import { SocialSidebar } from './components/SocialSidebar';
 import { WhatsAppWidget } from './components/WhatsAppWidget';
@@ -66,6 +67,8 @@ export default function App() {
 
       {/* Cinematic Vignette */}
       <div className="fixed inset-0 z-[100] pointer-events-none shadow-[inset_0_0_150px_rgba(0,0,0,0.9)]" />
+      
+      <SpeedInsights />
     </div>
     </>
   );
